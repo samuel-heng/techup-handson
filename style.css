@@ -24,3 +24,7 @@ h1 {
 #important {
     color: yellow;
 }
+
+.button {
+    margin: 10px;
+}

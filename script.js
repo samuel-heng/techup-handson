@@ -24,7 +24,7 @@ if (isMale == true) {
 
 while (age < 70) {
     console.log("Your age is " + age);
-    age = age + 1
+    age++
 }
 
 function sayHello() {
@@ -39,4 +39,18 @@ function showAge() {
     // Update the content for the HTML element with ID #header-age with 
     // whatever the user_input varible contains
     document.getElementById("header-age").textContent = user_input
+}
+
+function scrollToTop() {
+
+    // Scroll to a point in the browser window, in this case it is 0px from the top
+    // using a smooth scrolling animation
+    window.scrollTo({ top: 0, behavior: "smooth" });
+ }
+
+function scrollToBottom() {
+    // Scroll to a point in the browser window, in this case it is 0px from the top
+    // using a smooth scrolling animation
+    var height = window.innerHeight
+    window.scrollTo({ top: height, behavior: "smooth" });
 }
